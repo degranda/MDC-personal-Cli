@@ -11,7 +11,7 @@
 // buttons
 @use "@material/button/mdc-button";
 
-@use "@material/elevation/mdc-elevation";
+@use "@material/typography/mdc-typography";
 
 // Grid
 @import "@material/layout-grid/mdc-layout-grid";
@@ -22,7 +22,8 @@
 }
 body {
     display: flex;
-    height: 100vh;
+    height: 100vh; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .mdc-drawer-app-content {
