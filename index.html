@@ -4,12 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <link rel="stylesheet" href="./bundle-index.css">
 </head>
-<body>
+<body>  
     
-    <h1>Hola mundo!</h1>
+    <aside class="mdc-drawer mdc-drawer--dismissible">
+        <div class="mdc-drawer__content">
+            <div class="mdc-drawer__header">
+                <h3 class="mdc-drawer__title">Mail</h3>
+                <h6 class="mdc-drawer__subtitle">email@material.io</h6>
+            </div>
+            <nav class="mdc-list">
+                <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+                    <span class="mdc-list-item__text">Inbox</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>
+                    <span class="mdc-list-item__text">Star</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+                    <span class="mdc-list-item__text">Sent Mail</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+                    <span class="mdc-list-item__text">Drafts</span>
+                </a>
+            
+                <hr class="mdc-list-divider">
+                <h6 class="mdc-list-group__subheader">Labels</h6>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">bookmark</i>
+                    <span class="mdc-list-item__text">Family</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">bookmark</i>
+                    <span class="mdc-list-item__text">Friends</span>
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">bookmark</i>
+                    <span class="mdc-list-item__text">Work</span>
+                </a>
+            </nav>
+        </div>
+    </aside>
 
+    <div class="mdc-drawer-app-content">
+        <header class="mdc-top-app-bar app-bar" id="app-bar">
+            <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                <span class="mdc-top-app-bar__title">Materia Components Boilerplate</span>
+            </section>
+            </div>
+        </header>
+
+        <div class="mdc-drawer-scrim"></div>
+
+        <main class="main-content" id="main-content">
+            <div class="mdc-top-app-bar--fixed-adjust">
+                <section id="main-container">
+                    <div class="mdc-card">
+                        Contenido principal!
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    
     <script src="./bundle-app.js" async></script>
 </body>
 </html>
